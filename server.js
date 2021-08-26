@@ -15,7 +15,7 @@ const profileschema={
   email: String,
   collegename: String,
   dept: String,
-  yop: Number
+  yop: String
 }
 const Profiles=mongoose.model("Profiles",profileschema);
 
