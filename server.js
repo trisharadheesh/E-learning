@@ -3,7 +3,6 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser=require("body-parser");
 const path = require('path');
-app.use(express.static(__dirname + '/public'));
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -21,7 +20,7 @@ const profileschema={
 const Profiles=mongoose.model("Profiles",profileschema);
 
 app.get("/",function(req,res){
-  res.sendFile(path.join(__dirname,'/profile-backend',  'profile.html'));
+  res.sendFile(path.join(__dirname,'./profile-backend',  'profile.html'));
 })
 
 //app.post
