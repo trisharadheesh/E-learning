@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="    https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
+    " rel="stylesheet">
+    <link href="    https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js
+    " rel="stylesheet">
+    <link href="    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+    " rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="./profilecss.css" />
+    
+
+</head>
+
+<body>
+    <div class="wrapper bg-white mt-sm-5">
+        <h4 class="pb-4 border-bottom">Account settings</h4>
+     <form id="survey-form" method="POST" action="/" >
+        <div class="d-flex align-items-start py-3 border-bottom "> <img class="profile-pic" src="../images/webdev-cover.png" >
+            <div class="pl-sm-4 pl-2 p-image" id="img-section"> <b>Profile Photo</b>
+                <p>Accepted file type .png. Less than 1MB</p> <button class="btn button border upload-button"><b>Upload</b></button>  <input class="file-upload" type="file" accept="image/*"/>
+            </div>
+        </div>
+        <div class="py-2">
+            <div class="row py-2">
+                <div class="col-md-6"> <label for="firstname">First Name</label> <input type="text" class="bg-light form-control" name="firstname" placeholder="Steve"> </div>
+                <div class="col-md-6 pt-md-0 pt-3"> <label for="lastname">Last Name</label> <input type="text" class="bg-light form-control" placeholder="Smith"> </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6"> <label for="email">Email Address</label> <input type="text" class="bg-light form-control" name="lastname" name="email" placeholder="steve_@email.com"> </div>
+                <div class="col-md-6 pt-md-0 pt-3"> <label for="college">College Name</label> <input type="tel" class="bg-light form-control"name="collegename" placeholder="College name"> </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6"> <label for="country">Department</label> <select name="dept" id="country" class="bg-light">
+                        <option value="cse" selected>CSE</option>
+                        <option value="it">IT</option>
+                        <option value="ece">ECE</option>
+                        <option value="eee">EEE</option>
+                        <option value="eie">EIE</option>
+                        <option value="mech">MECH</option>
+                        <option value="ae">AE</option>
+                        <option value="ce">CE</option>
+                        <option value="aids">AI & DS</option>
+                        
+
+                    </select> </div>
+                <div class="col-md-6 pt-md-0 pt-3" id="lang"> <label for="year">Year Of Passing</label>
+                    <div class="arrow"> <select name="yop" id="language" class="bg-light">
+                            <option value="english" selected>2021</option>
+                            <option value="english_us">2022</option>
+                            <option value="enguk">2023</option>
+                            <option value="arab">2024</option>
+                            <option value="arab">2025</option>
+
+                        </select> </div>
+                </div>
+            </div>
+            <div class="py-3 pb-4 border-bottom"> <button class="btn btn-primary mr-3">Save Changes</button> <button class="btn border button">Cancel</button> </div>
+            <div class="d-sm-flex align-items-center pt-3" id="deactivate">
+                <div> <b>Deactivate your account</b>
+                    <p>Details about your company account and password</p>
+                </div>
+                <div class="ml-auto"> <button class="btn danger">Deactivate</button> </div>
+            </div>
+        </div>
+     </form>
+    </div>        
+        
+    <script src="index.js"></script>
+    <script src="server.js"></script>
+
+             
+</body>
+
+</html>

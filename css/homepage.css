@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border:0;
+}
+
+body{
+    font-family: 'Nunito'!important;
+    @media screen and(max-width: 400px;) and(min-width: 800px;) {
+        
+    }
+}
+.navbar-brand img{
+    margin-left: 10px;
+}
+.login{color:#0F2027; margin-left: 1000px;padding-right: 15px;}
+
+
+.nav-item btn{
+    margin-right: 10px;
+    padding-right: 20px;
+}
+
+#grad1 {
+    height:410px;
+    background: #0F2027; 
+    background: -webkit-linear-gradient(to right, #4f2a50, #970a9c); 
+    background: linear-gradient(to right,#4f2a50, #970a9c);
+}
+
+#grad1 img{
+    width: 600px;
+    height: 393px;
+    margin-left: 0.1rem;
+    margin-top: 120px;
+        
+}
+
+.w3{
+    color:#0F2027;
+}
+
+#grad1 img:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.login{
+    cursor: pointer;
+}
+
+.words{
+    transform: translate(-50%,-50%);
+    padding: 0 40px;
+    height: 60px;
+    overflow: hidden;
+}
+
+/*.h12:first-child{
+    animation: text 12s infinite;
+}*/
+.h11{
+    color:rgb(255, 251, 0);
+    font-size: 40px;
+} 
+
+.h12{
+    color:rgb(255, 251, 0);
+    font-size: 40px;
+    margin-top: 40px;
+} 
+
+/*@keyframes text {
+    0% {
+        color: rgb(163, 24, 255);
+    }
+
+    30% {
+        letter-spacing: 25px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+
+    }
+}
+*/
+.textline{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: #f3f703;
+    color: #0F2027;
+    padding: 0 40px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.line{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.line:first-child{
+    animation: anim 12s infinite;
+}
+
+@keyframes anim{
+    0%{ margin-top: 0;}
+    20%{ margin-top: -60px;}
+    33%{ margin-top: -120px;}
+    50%{ margin-top: -180px;}
+    66%{ margin-top: -120px;}
+    82%{ margin-top: -60px;}
+    100%{ margin-top: 0;}
+}
+
+
+@media only screen and (max-width:700px){
+    navbar { width: 100%; }
+}
